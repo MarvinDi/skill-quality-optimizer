@@ -1,7 +1,10 @@
-# 计划文件，不提交到 GitHub
+# Plan files, do not commit to GitHub
 .trae/documents/
 
-# 其他忽略
+# Old skill directory (restructured to root), do not commit
+.trae/
+
+# Other ignores
 node_modules/
 .DS_Thumbs
 Thumbs.db

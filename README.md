@@ -1,0 +1,64 @@
+# skill-quality-optimizer
+
+Skill Quality Optimizer — analyzes, lints, and refactors SKILL.md files to follow the best practices from "Skill is too long, AI can't remember".
+
+## Install
+
+### Via skills.sh
+
+```bash
+npx skills add MarvinDi/skill-quality-optimizer
+```
+
+### Manual Install
+
+Clone this repository into your skills directory:
+
+```bash
+git clone https://github.com/MarvinDi/skill-quality-optimizer.git
+```
+
+## Usage
+
+Invoke this skill when your SKILL.md has any of these issues:
+
+1. Over 500 lines, AI can't locate rules
+2. `description` only says "what I do", not "when to call me"
+3. Body has requirements but no code output examples
+4. Same rule duplicated across skill, project rules, and system prompt
+5. Not tested with multiple phrasings for trigger stability
+
+This skill outputs a quality report, split plan, description rewrite suggestions, code examples, and multi-phrasing test cases.
+
+## Structure
+
+```
+skill-quality-optimizer/
+├── SKILL.md              ← Main skill definition (<500 lines, with trigger conditions)
+├── README.md
+├── LICENSE
+├── references/
+│   ├── skill-lint-rules.md   ← Five pitfalls detailed check rules
+│   ├── split-template.md     ← Skill split template
+│   └── test-phrasings.md     ← Multi-phrasing test case template
+└── examples/
+    ├── before/
+    │   └── overlong-skill/       ← Optimization-before overlong skill example
+    └── after/
+        └── skill-quality-optimizer/  ← Optimization-after split skill example
+            ├── SKILL.md
+            └── references/
+```
+
+## Principle
+
+Based on the article "Skill is too long, AI can't remember":
+
+- AI reads skills in three layers: at startup it only loads `name`+`description`; it reads the body only when it decides to use the skill; it opens `references/` files only when truly needed.
+- Every line in the body competes with conversation history for context window space. Keep SKILL.md body under 500 lines.
+
+This skill practices what it preaches: SKILL.md body < 500 lines, `description` includes trigger conditions, details in `references/`.
+
+## License
+
+[MIT](LICENSE)
