@@ -53,7 +53,7 @@ skill-quality-optimizer/
 
 ## 原理
 
-参考文章《Skill 写太长，AI 反而记不住》：
+参考文章 [《Skill 写太长，AI 反而记不住》](https://mp.weixin.qq.com/s/B6hbLin681pqZg5Fzz2ClQ)（2026-10-29 首发于微信公众号「大模型AI之旅」）：
 
 - AI 读技能分三层：启动时只读 `name` + `description`；判定要用才读正文；真需要才打开 `references/`。
 - 写进正文的每一行都在跟对话历史抢上下文位置，建议 SKILL.md 正文控制在 500 行以内。

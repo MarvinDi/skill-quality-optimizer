@@ -53,7 +53,7 @@ skill-quality-optimizer/
 
 ## Principle
 
-Based on the article "Skill is too long, AI can't remember":
+Based on the article [《Skill 写太长，AI 反而记不住》](https://mp.weixin.qq.com/s/B6hbLin681pqZg5Fzz2ClQ), originally published (in Chinese) on the WeChat Official Account "大模型AI之旅" on 2026-10-29:
 
 - AI reads skills in three layers: at startup it only loads `name` + `description`; it reads the body only when it decides to use the skill; it opens `references/` files only when truly needed.
 - Every line in the body competes with conversation history for context window space. Keep the SKILL.md body under 500 lines.
