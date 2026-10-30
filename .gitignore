@@ -1,0 +1,8 @@
+# 计划文件，不提交到 GitHub
+.trae/documents/
+
+# 其他忽略
+node_modules/
+.DS_Thumbs
+Thumbs.db
+*.log
