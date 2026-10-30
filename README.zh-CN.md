@@ -51,6 +51,8 @@ skill-quality-optimizer/
             └── references/
 ```
 
+> 说明：`examples/` 下的文件是演示优化前后效果的测试样例，并非可安装的技能。
+
 ## 原理
 
 参考文章 [《Skill 写太长，AI 反而记不住》](https://mp.weixin.qq.com/s/B6hbLin681pqZg5Fzz2ClQ)（2026-10-29 首发于微信公众号「大模型AI之旅」）：

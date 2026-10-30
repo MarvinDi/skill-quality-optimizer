@@ -51,6 +51,8 @@ skill-quality-optimizer/
             └── references/
 ```
 
+> Note: files under `examples/` are test fixtures demonstrating before/after results, not installable skills.
+
 ## Principle
 
 Based on the article [《Skill 写太长，AI 反而记不住》](https://mp.weixin.qq.com/s/B6hbLin681pqZg5Fzz2ClQ), originally published (in Chinese) on the WeChat Official Account "大模型AI之旅" on 2026-10-29:

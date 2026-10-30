@@ -1,6 +1,9 @@
 ---
 name: skill-quality-optimizer
 description: "Analyzes, lints, and refactors SKILL.md files. Invoked when a skill is too long, lacks trigger conditions in description, has no code examples, or duplicates rules across files. Splits overlong skills into SKILL.md + references/."
+license: MIT
+metadata:
+  version: "1.1.0"
 ---
 
 # Skill Quality Optimizer
